@@ -1,55 +1,1206 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffcf00">
-<meta name="description" content="주식회사 포켓몬의 기업 이념, 사업, 연혁을 소개하는 미니멀한 회사 소개 디자인 시안입니다.">
-<title>주식회사 포켓몬 — 포켓몬으로 연결되는 세계</title>
-<style>
-:root{--paper:#fff;--ink:#20242a;--muted:#62666c;--line:#e5e7e9;--yellow:#ffcf00;--blue:#2a65b7;--soft:#f5f7fa;--radius:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:6px}::selection{background:var(--yellow);color:var(--ink)}.wrap{width:min(1200px,calc(100% - 96px));margin-inline:auto}.skip{position:fixed;top:-80px;left:20px;background:var(--ink);color:white;padding:10px 20px;z-index:100}.skip:focus{top:10px}.header{height:88px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;letter-spacing:-.5px;line-height:1.25}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:1.1px;margin-top:4px}.brand-symbol{width:29px;height:29px;border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;position:relative;background:linear-gradient(var(--yellow) 48%,var(--ink) 48%,var(--ink) 55%,white 55%);flex:none}.brand-symbol:after{content:"";width:8px;height:8px;border:2px solid var(--ink);background:white;border-radius:50%}.nav{display:flex;gap:30px;align-items:center;font-size:13px;font-weight:650}.nav a{position:relative;padding:10px 0}.nav a:after{content:"";position:absolute;height:3px;left:0;right:100%;bottom:1px;background:var(--yellow);transition:right .2s}.nav a:hover:after,.nav a.active:after{right:0}.nav .external{border:1px solid var(--line);border-radius:30px;padding:9px 17px}.menu-button{flex:none;white-space:nowrap;display:none;background:none;border:1px solid var(--line);border-radius:99px;padding:7px 15px;font-size:13px}.hero{min-height:670px;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:36px;padding-block:88px 74px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--yellow)}h1{font-size:clamp(40px,5.2vw,74px);letter-spacing:-.065em;line-height:1.22;margin:28px 0 24px;font-weight:800}h1 .mark{position:relative;display:inline-block;isolation:isolate}h1 .mark:after{content:"";height:.23em;bottom:.08em;left:0;right:-.03em;background:var(--yellow);position:absolute;z-index:-1}.hero p{max-width:390px;color:var(--muted);font-size:16px;line-height:1.9}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:34px;min-height:52px;padding:13px 22px;background:var(--ink);color:white;font-size:13px;border-radius:99px;margin-top:24px;transition:transform .2s,background .2s}.button:hover{background:var(--blue);transform:translateY(-3px)}.button span{font-size:20px;line-height:1}.hero-art{aspect-ratio:1;position:relative;display:grid;place-items:center;max-width:490px;width:100%;margin:auto}.orbit{position:absolute;border:1px solid #e2e4e6;border-radius:50%;inset:5%}.orbit.two{inset:16%}.orbit.three{inset:26%}.sphere{width:56%;aspect-ratio:1;border-radius:50%;background:var(--yellow);box-shadow:inset -20px -20px 45px #e3b00022,0 24px 60px #d7ac0020;position:relative;display:grid;place-items:center}.sphere:before{content:"";width:100%;height:1px;background:#20242a25;position:absolute;top:50%}.core{width:28%;aspect-ratio:1;border:1px solid #20242a30;border-radius:50%;background:#fff;display:grid;place-items:center}.core:after{content:"";width:36%;aspect-ratio:1;background:var(--ink);border-radius:50%}.orbit-dot{position:absolute;width:17px;height:17px;border-radius:50%;background:var(--blue);top:16%;left:22%;box-shadow:0 0 0 8px white}.orbit-dot.second{width:10px;height:10px;top:auto;left:auto;bottom:14%;right:19%;background:var(--ink)}.art-tag{position:absolute;padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:white;font-size:10px;letter-spacing:1.5px;font-weight:700;box-shadow:0 4px 12px #20242a04}.art-tag.real{left:0;top:50%}.art-tag.virtual{right:0;bottom:24%}.art-caption{position:absolute;bottom:0;font-size:9px;letter-spacing:2px;color:var(--muted)}.intro-line{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1.6fr;gap:40px;padding-block:30px;margin-bottom:110px}.intro-line strong{font-size:17px}.intro-line p{margin:0;font-size:14px;color:var(--muted);max-width:620px}.section{padding-block:90px}.section-head{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;margin-bottom:44px}.section-no{font-size:11px;color:var(--muted);letter-spacing:1.5px}.section-no b{color:var(--blue);margin-right:14px}h2{font-size:clamp(30px,3.3vw,45px);line-height:1.35;letter-spacing:-.045em;margin:0 0 22px;font-weight:750}.lead{color:var(--muted);font-size:15px;max-width:590px;margin:0}.philosophy{background:var(--ink);color:white;border-radius:var(--radius);padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:64px;position:relative;overflow:hidden}.philosophy .eyebrow{color:#c3c8ce}.philosophy h3{font-size:clamp(27px,3vw,39px);line-height:1.5;letter-spacing:-.04em;margin:25px 0 0}.philosophy h3 em{font-style:normal;color:var(--yellow)}.philosophy p{font-size:14px;color:#c3c8ce;margin:12px 0 25px}.philosophy .mission-label{font-size:10px;letter-spacing:1.8px;color:var(--yellow)}.source-inline{font-size:11px;color:var(--muted);display:block;margin-top:15px}.source-inline:hover{text-decoration:underline}.philosophy .source-inline{color:#c3c8ce}.business{background:var(--soft)}.business-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.business-card{padding:30px;background:white;border:1px solid #e9ebed;border-radius:16px;transition:transform .25s,border-color .25s;min-width:0}.business-card:hover{transform:translateY(-4px);border-color:#d8b600}.business-card .index{font-size:10px;letter-spacing:1px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}.business-card .index span{width:28px;height:28px;border-radius:50%;background:#fff7d1;display:grid;place-items:center;color:#695300;font-size:12px}.business-card h3{font-size:20px;margin:27px 0 9px;letter-spacing:-.04em}.business-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}.business-note{margin-top:25px;font-size:13px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.business-note a{color:var(--blue);font-weight:650}.timeline{border-top:1px solid var(--line)}.timeline-row{display:grid;grid-template-columns:160px 1fr 100px;gap:32px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}.year{font-family:"Arial",sans-serif;font-size:38px;font-weight:500;letter-spacing:-2px;line-height:1.1}.timeline-row h3{font-size:16px;margin:0 0 8px}.timeline-row p{font-size:13px;color:var(--muted);margin:0}.pill{font-size:10px;border:1px solid var(--line);border-radius:99px;justify-self:end;padding:4px 10px;white-space:nowrap}.company{padding-top:20px}.facts{margin:0;border-top:1px solid var(--line)}.fact{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line);font-size:14px}.fact dt{font-weight:650}.fact dd{margin:0;color:var(--muted)}.fact dd span{display:block}.source-panel{margin-top:60px;border-radius:16px;background:var(--soft);padding:28px 32px;display:grid;grid-template-columns:1fr 2fr;gap:28px}.source-panel h3{font-size:14px;margin:0 0 5px}.source-panel p{font-size:11px;color:var(--muted);margin:0}.source-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:12px}.source-links a{border-bottom:1px solid var(--line);padding:4px 0;display:flex;justify-content:space-between;gap:12px}.source-links a:hover{color:var(--blue)}.closing{padding:65px 0;background:var(--yellow)}.closing-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.closing p{font-size:clamp(25px,3.4vw,42px);font-weight:750;letter-spacing:-.05em;line-height:1.4;margin:0}.closing .button{margin:0;flex:none}.footer{padding:38px 0}.footer-inner{display:flex;justify-content:space-between;gap:30px;font-size:11px;color:var(--muted)}.footer p{margin:0}.footer .footer-name{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:8px}.to-top{position:fixed;right:22px;bottom:22px;width:42px;height:42px;border:1px solid var(--line);background:white;border-radius:50%;cursor:pointer;box-shadow:0 3px 15px #00000008;opacity:0;visibility:hidden;transition:opacity .2s;z-index:10}.to-top.show{opacity:1;visibility:visible}
-@media(min-width:1000px){.hero-art{animation:float 7s ease-in-out infinite}@keyframes float{50%{transform:translateY(-9px)}}}
-@media(max-width:1000px){.wrap{width:calc(100% - 56px)}.nav{gap:20px}.nav .external{display:none}.hero{min-height:auto;padding-block:70px;gap:15px}.hero h1{font-size:clamp(38px,5.5vw,60px)}.hero p{font-size:14px}.hero-art{max-width:400px}.philosophy{padding:42px;gap:35px}.business-card{padding:24px}.section-head{grid-template-columns:1fr 1.8fr}.intro-line{margin-bottom:50px}.section{padding-block:70px}}
-@media(max-width:640px){html{scroll-padding-top:90px}.wrap{width:calc(100% - 40px)}.header{height:74px}.brand{font-size:15px}.brand small{font-size:8px}.brand-symbol{width:26px;height:26px}.menu-button{display:block}.nav{display:none;position:absolute;top:73px;left:0;right:0;background:white;border-bottom:1px solid var(--line);padding:15px 25px;flex-direction:column;align-items:stretch;gap:2px}.nav.open{display:flex}.nav a{padding:10px}.hero{grid-template-columns:1fr;padding-block:48px 38px;gap:28px}.eyebrow{font-size:9px;letter-spacing:1.6px}.hero h1{font-size:clamp(38px,11vw,60px);margin-top:24px}.hero p{max-width:330px}.hero-art{max-width:310px;justify-self:center}.art-tag{font-size:8px;padding:7px 12px}.art-caption{font-size:7px}.intro-line{grid-template-columns:1fr;gap:12px;padding-block:24px;margin-bottom:0}.intro-line p{font-size:13px}.section{padding-block:55px}.section-head{grid-template-columns:1fr;gap:18px;margin-bottom:30px}.section-no{font-size:10px}h2{font-size:31px;margin-bottom:15px}.lead{font-size:14px}.philosophy{grid-template-columns:1fr;padding:30px 25px;gap:32px}.philosophy h3{font-size:28px}.philosophy p{font-size:13px}.business-grid{grid-template-columns:1fr 1fr;gap:10px}.business-card{padding:21px 18px}.business-card h3{font-size:18px;margin-top:22px}.business-card p{font-size:12px}.business-note{font-size:12px}.timeline-row{grid-template-columns:77px 1fr;gap:18px;padding-block:25px}.year{font-size:29px}.timeline-row h3{font-size:14px}.timeline-row p{font-size:12px}.pill{display:none}.fact{grid-template-columns:85px 1fr;gap:16px;font-size:12px;padding-block:19px}.company{padding-top:0}.source-panel{grid-template-columns:1fr;padding:24px;gap:18px;margin-top:40px}.source-links{font-size:11px;gap:8px 18px}.closing{padding-block:40px}.closing-inner{align-items:flex-start;flex-direction:column;gap:24px}.closing p{font-size:30px}.footer-inner{flex-direction:column;gap:18px}.footer{padding-block:30px}.to-top{right:14px;bottom:14px}}
-@media(max-width:360px){.business-grid{grid-template-columns:1fr}.source-links{grid-template-columns:1fr}.hero h1{font-size:37px}.wrap{width:calc(100% - 32px)}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사 포켓몬 | The Pokémon Company - 기업 소개</title>
+    <!-- Fonts: Pretendard (Body/KR Headline) & Montserrat (Point/EN Headline) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ==========================================================================
+           1. CSS Variables & Reset (The Poké-Verse Bridge Minimal Concept)
+           ========================================================================== */
+        :root {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F7F8FA;
+            --text-primary: #1E1E24;
+            --text-secondary: #5A5C66;
+            --text-muted: #8E919E;
+            --accent-red: #E3350D;
+            --accent-yellow: #FFCB05;
+            --border-color: #E6E8F0;
+            --card-radius: 24px;
+            --pill-radius: 9999px;
+            --container-width: 1240px;
+            --header-height: 80px;
+            --font-kr: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --font-en: 'Montserrat', var(--font-kr);
+            --shadow-subtle: 0 10px 30px -5px rgba(30, 30, 36, 0.04);
+            --shadow-hover: 0 20px 40px -10px rgba(30, 30, 36, 0.1);
+            --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-kr);
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            line-height: 1.65;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        /* ==========================================================================
+           2. Layout & Common Utility Classes
+           ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 110px 0;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 56px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-en);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-red);
+            background: rgba(227, 53, 13, 0.08);
+            padding: 6px 14px;
+            border-radius: var(--pill-radius);
+            margin-bottom: 16px;
+        }
+
+        .section-badge::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--accent-red);
+        }
+
+        .section-title {
+            font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.25;
+            color: var(--text-primary);
+        }
+
+        .section-desc {
+            margin-top: 14px;
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            max-width: 640px;
+        }
+
+        .en-point {
+            font-family: var(--font-en);
+        }
+
+        /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-red), var(--accent-yellow));
+            width: 0%;
+            z-index: 2000;
+            transition: width 0.1s ease-out;
+        }
+
+        /* ==========================================================================
+           3. Navigation Header (Glassmorphism Minimal)
+           ========================================================================== */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: rgba(255, 255, 255, 0.84);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(230, 232, 240, 0.8);
+            z-index: 1000;
+            transition: var(--transition-smooth);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .pokeball-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 2.5px solid var(--text-primary);
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-primary);
+            flex-shrink: 0;
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .brand-logo:hover .pokeball-icon {
+            transform: rotate(180deg);
+        }
+
+        .pokeball-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: var(--accent-red);
+            border-bottom: 2.5px solid var(--text-primary);
+        }
+
+        .pokeball-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: var(--bg-primary);
+            border: 2.5px solid var(--text-primary);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: color 0.2s ease;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--accent-red);
+            transition: width 0.25s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* ==========================================================================
+           4. Hero Section (Dual-Frame Concept: Real World & Virtual World)
+           ========================================================================== */
+        .hero-section {
+            padding-top: calc(var(--header-height) + 70px);
+            padding-bottom: 100px;
+            background: radial-gradient(circle at 90% 10%, rgba(255, 203, 5, 0.08) 0%, transparent 40%),
+                        radial-gradient(circle at 10% 80%, rgba(227, 53, 13, 0.05) 0%, transparent 45%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: var(--pill-radius);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            font-family: var(--font-en);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+        }
+
+        .hero-tag span.dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-yellow);
+            box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.25);
+        }
+
+        .hero-title {
+            font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero-title .highlight-red {
+            color: var(--accent-red);
+        }
+
+        .hero-lead {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 36px;
+            max-width: 560px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 28px;
+            border-radius: var(--pill-radius);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-red);
+            color: #FFFFFF;
+            box-shadow: 0 10px 24px -6px rgba(227, 53, 13, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #c82a07;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: #ECEDF2;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Visual: Interactive Dual Bridge Card */
+        .bridge-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .world-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            padding: 28px 30px;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .world-card:hover {
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(30, 30, 36, 0.18);
+        }
+
+        .world-card.virtual {
+            border-left: 5px solid var(--accent-red);
+        }
+
+        .world-card.real {
+            border-left: 5px solid var(--accent-yellow);
+        }
+
+        .world-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .world-label {
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .world-card.virtual .world-label {
+            background: rgba(227, 53, 13, 0.1);
+            color: var(--accent-red);
+        }
+
+        .world-card.real .world-label {
+            background: rgba(255, 203, 5, 0.22);
+            color: #947400;
+        }
+
+        .world-card h3 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .world-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .bridge-connector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .bridge-connector::before,
+        .bridge-connector::after {
+            content: '';
+            height: 1px;
+            flex: 1;
+            background: var(--border-color);
+        }
+
+        /* ==========================================================================
+           5. Company Overview (Bento Grid Minimal System)
+           ========================================================================== */
+        .overview-section {
+            background-color: var(--bg-secondary);
+        }
+
+        .bento-overview {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+
+        .bento-item {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            padding: 32px;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bento-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .span-4 { grid-column: span 4; }
+        .span-6 { grid-column: span 6; }
+        .span-8 { grid-column: span 8; }
+        .span-12 { grid-column: span 12; }
+
+        .meta-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .meta-value-lg {
+            font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .meta-sub {
+            margin-top: 8px;
+            font-size: 0.925rem;
+            color: var(--text-secondary);
+        }
+
+        .shareholder-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .pill {
+            padding: 8px 16px;
+            border-radius: var(--pill-radius);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        /* ==========================================================================
+           6. Vision & Mission Section
+           ========================================================================== */
+        .vision-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .statement-card {
+            border-radius: var(--card-radius);
+            padding: 44px 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .statement-card.mission-theme {
+            background: var(--text-primary);
+            color: #FFFFFF;
+            border-color: var(--text-primary);
+        }
+
+        .statement-card.vision-theme {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            border: 2px solid var(--text-primary);
+        }
+
+        .statement-type {
+            font-family: var(--font-en);
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mission-theme .statement-type {
+            color: var(--accent-yellow);
+        }
+
+        .vision-theme .statement-type {
+            color: var(--accent-red);
+        }
+
+        .statement-kr {
+            font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+            font-weight: 800;
+            line-height: 1.45;
+            margin-bottom: 20px;
+        }
+
+        .statement-en {
+            font-family: var(--font-en);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.78;
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           7. Business Areas (5 Core Pillars + Category Filter)
+           ========================================================================== */
+        .business-section {
+            background-color: var(--bg-secondary);
+        }
+
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 36px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border-radius: var(--pill-radius);
+            border: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            font-family: var(--font-kr);
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--text-primary);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--text-primary);
+            color: #FFFFFF;
+            border-color: var(--text-primary);
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 24px;
+        }
+
+        .biz-card {
+            grid-column: span 2;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            padding: 36px 32px;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .biz-card.wide-card {
+            grid-column: span 3;
+        }
+
+        .biz-card.hidden {
+            display: none;
+        }
+
+        .biz-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--accent-red);
+        }
+
+        .biz-top {
+            margin-bottom: 24px;
+        }
+
+        .biz-num {
+            font-family: var(--font-en);
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            background: rgba(227, 53, 13, 0.08);
+            padding: 5px 12px;
+            border-radius: var(--pill-radius);
+            display: inline-block;
+            margin-bottom: 18px;
+        }
+
+        .biz-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .biz-desc {
+            font-size: 0.975rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .biz-footer {
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-en);
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           8. Sources & Citations Section
+           ========================================================================== */
+        .sources-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--card-radius);
+            padding: 36px 40px;
+        }
+
+        .sources-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 32px;
+            margin-top: 20px;
+        }
+
+        .sources-list li {
+            font-size: 0.925rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.5;
+        }
+
+        .sources-list li::before {
+            content: '📎';
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        /* ==========================================================================
+           9. Footer
+           ========================================================================== */
+        .site-footer {
+            background: var(--text-primary);
+            color: #FFFFFF;
+            padding: 64px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .footer-brand h4 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .footer-brand p {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .footer-note {
+            font-size: 0.825rem;
+            color: rgba(255, 255, 255, 0.55);
+            text-align: right;
+        }
+
+        /* ==========================================================================
+           10. Responsive Media Queries (Prevent Any Overlap or Overflow)
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .span-4, .span-6, .span-8 {
+                grid-column: span 6;
+            }
+            .vision-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .biz-card, .biz-card.wide-card {
+                grid-column: span 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 80px 0;
+            }
+            .nav-links {
+                display: none;
+            }
+            .span-4, .span-6, .span-8, .span-12 {
+                grid-column: span 12;
+            }
+            .biz-card, .biz-card.wide-card {
+                grid-column: span 6;
+            }
+            .sources-list {
+                grid-template-columns: 1fr;
+            }
+            .statement-card {
+                padding: 32px 24px;
+            }
+            .footer-note {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
-<body id="top">
-<a href="#main" class="skip">본문 바로가기</a>
-<header class="header"><div class="wrap header-inner">
-<a href="#top" class="brand" aria-label="주식회사 포켓몬 페이지 처음으로"><span class="brand-symbol" aria-hidden="true"></span><span>The Pokémon Company<small>주식회사 포켓몬</small></span></a>
-<button class="menu-button" aria-expanded="false" aria-controls="main-nav">메뉴</button>
-<nav class="nav" id="main-nav" aria-label="주 메뉴"><a href="#about">회사 소개</a><a href="#business">사업 분야</a><a href="#history">우리의 발자취</a><a href="#company">기업 정보</a><a class="external" href="https://corporate.pokemon.co.jp/" target="_blank" rel="noopener noreferrer">공식 사이트 ↗</a></nav>
-</div></header>
-<main id="main">
-<div class="wrap"><section class="hero" aria-labelledby="hero-title">
-<div><div class="eyebrow">PLAYFUL CONNECTION</div><h1 id="hero-title">포켓몬으로,<br><span class="mark">세계를</span><br>연결합니다.</h1><p>현실과 가상 세계를 넘나드는 즐거움.<br>주식회사 포켓몬은 포켓몬을 통해<br>사람과 사람, 새로운 경험을 연결합니다.</p><a class="button" href="#about">우리의 이야기 <span aria-hidden="true">↓</span></a></div>
-<div class="hero-art" role="img" aria-label="현실과 가상 세계의 연결을 표현한 노란 구체와 궤도 그래픽"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sphere"><div class="core"></div></div><div class="orbit-dot"></div><div class="orbit-dot second"></div><span class="art-tag real">REAL WORLD</span><span class="art-tag virtual">VIRTUAL WORLD</span><span class="art-caption">A WORLD OF CONNECTIONS</span></div>
-</section><div class="intro-line"><strong>하나의 포켓몬, 무한한 연결.</strong><p>게임에서 카드, 영상과 일상의 경험까지.<br>우리는 포켓몬의 매력을 다양한 방식으로 전하며, 오래도록 사랑받는 브랜드를 만들어갑니다.</p></div></div>
-<section class="section wrap" id="about" aria-labelledby="about-title"><div class="section-head"><div class="section-no"><b>01</b> ABOUT US</div><div><h2 id="about-title">즐거움이 이어질수록,<br>세계는 더 가까워집니다.</h2><p class="lead">1998년 닌텐도, 크리처스, 게임프리크에 의해 설립된 주식회사 포켓몬. 포켓몬 콘텐츠에 집중하며 브랜드 전반의 사업을 펼치고 있습니다.</p><a class="source-inline" href="https://corporate.pokemon.co.jp/aboutus/history/" target="_blank" rel="noopener noreferrer">설립 배경 · 공식 자료 ↗</a></div></div>
-<div class="philosophy"><div><div class="eyebrow">OUR PHILOSOPHY</div><h3>현실과 가상 세계를<br>모두 <em>풍요롭게.</em></h3></div><div><div class="mission-label">MISSION</div><p>포켓몬이라는 존재를 통해 현실 세계와 가상 세계 모두를 풍요롭게 합니다.</p><div class="mission-label">GROUP VISION</div><p>포켓몬으로 세계를 연결합니다. 다양한 세대가 함께 즐기고, 경험을 나누며, 서로의 세계를 넓힐 수 있도록.</p><a class="source-inline" href="https://corporate.pokemon.co.jp/aboutus/philosophy/" target="_blank" rel="noopener noreferrer">기업 이념 · 공식 원문 ↗</a></div></div>
-</section>
-<section class="section business" id="business" aria-labelledby="business-title"><div class="wrap"><div class="section-head"><div class="section-no"><b>02</b> OUR BUSINESS</div><div><h2 id="business-title">포켓몬을 만나는<br>다양한 방법.</h2><p class="lead">콘텐츠 제작과 개발, 라이선스, 공식 매장 운영까지.<br>포켓몬의 즐거움은 다양한 사업으로 이어집니다.</p></div></div>
-<div class="business-grid">
-<article class="business-card"><div class="index">VIDEO GAMES <span aria-hidden="true">01</span></div><h3>비디오게임</h3><p>포켓몬의 세계를 직접 탐험하는 게임 콘텐츠의 프로듀싱과 개발.</p></article>
-<article class="business-card"><div class="index">TRADING CARD GAME <span aria-hidden="true">02</span></div><h3>카드게임</h3><p>수집과 대전으로 즐기는 포켓몬 트레이딩 카드게임 사업.</p></article>
-<article class="business-card"><div class="index">APPS <span aria-hidden="true">03</span></div><h3>앱</h3><p>모바일 기기를 통해 포켓몬을 만날 수 있는 앱 콘텐츠.</p></article>
-<article class="business-card"><div class="index">VIDEOS <span aria-hidden="true">04</span></div><h3>영상</h3><p>포켓몬의 이야기와 매력을 전하는 영상 콘텐츠 사업.</p></article>
-<article class="business-card"><div class="index">OFFICIAL SHOPS <span aria-hidden="true">05</span></div><h3>공식 매장</h3><p>포켓몬 상품과 브랜드 경험을 만나는 공식 매장 운영.</p></article>
-<article class="business-card"><div class="index">LICENSING &amp; TIE-INS <span aria-hidden="true">06</span></div><h3>라이선스 · 제휴</h3><p>파트너와 함께 포켓몬의 매력을 넓히는 라이선스 및 제휴 사업.</p></article>
-</div><div class="business-note"><span>해외 사업을 통해 세계 각지로 포켓몬의 경험을 전합니다.</span><a href="https://corporate.pokemon.co.jp/business/" target="_blank" rel="noopener noreferrer">공식 사업 소개 보기 ↗</a></div></div></section>
-<section class="section wrap" id="history" aria-labelledby="history-title"><div class="section-head"><div class="section-no"><b>03</b> OUR JOURNEY</div><div><h2 id="history-title">작은 시작에서,<br>더 넓은 세계로.</h2><p class="lead">포켓몬 브랜드의 시작과 회사의 주요 발자취를 소개합니다.</p></div></div>
-<div class="timeline"><article class="timeline-row"><div class="year">1996</div><div><h3>포켓몬의 모험이 시작되다</h3><p>2월, 일본에서 게임보이용 《포켓몬스터 적·녹》 출시.<br>10월, 일본에서 포켓몬 카드게임 출시.</p></div><span class="pill">브랜드 역사</span></article><article class="timeline-row"><div class="year">1997</div><div><h3>이야기가 화면 밖으로 확장되다</h3><p>4월, 일본 TV 도쿄 계열에서 TV 애니메이션 《포켓몬스터》 방영 시작.</p></div><span class="pill">브랜드 역사</span></article><article class="timeline-row"><div class="year">1998</div><div><h3>기업의 첫걸음을 내딛다</h3><p>4월, 포켓몬센터 주식회사 설립.<br>포켓몬센터 도쿄 개점.</p></div><span class="pill">회사 연혁</span></article><article class="timeline-row"><div class="year">2000</div><div><h3>주식회사 포켓몬으로 새로운 출발</h3><p>10월, 현재의 회사명으로 변경하고 포켓몬 브랜드 매니지먼트 전반으로 사업 영역 확대.</p></div><span class="pill">회사 연혁</span></article></div><a class="source-inline" href="https://corporate.pokemon.co.jp/aboutus/history/" target="_blank" rel="noopener noreferrer">포켓몬의 역사와 회사 연혁 · 공식 자료 ↗</a></section>
-<section class="section company wrap" id="company" aria-labelledby="company-title"><div class="section-head"><div class="section-no"><b>04</b> COMPANY PROFILE</div><div><h2 id="company-title">주식회사 포켓몬</h2><dl class="facts"><div class="fact"><dt>회사명</dt><dd>株式会社ポケモン<span>The Pokémon Company</span></dd></div><div class="fact"><dt>설립일</dt><dd>1998년 4월 23일</dd></div><div class="fact"><dt>자본금</dt><dd>3억 6,540만 엔</dd></div><div class="fact"><dt>대표자</dt><dd>대표이사 사장 이시하라 쓰네카즈<span>대표이사 우쓰노미야 다카토</span></dd></div><div class="fact"><dt>본사</dt><dd>일본 도쿄도 미나토구 롯폰기 6-10-1<span>롯폰기힐스 모리타워 47층</span><span>〒106-6147</span></dd></div><div class="fact"><dt>사업 내용</dt><dd>비디오게임·카드게임·앱·영상의 프로듀싱 및 개발, 라이선스 사업, 매장 운영 등</dd></div></dl></div></div>
-<aside class="source-panel" aria-labelledby="source-title"><div><h3 id="source-title">공식 자료 및 출처</h3><p>기업 정보 확인 기준: 2026.10.25<br>공식 자료를 바탕으로 내용을 요약·번역했습니다.</p></div><div class="source-links"><a href="https://corporate.pokemon.co.jp/aboutus/company/" target="_blank" rel="noopener noreferrer">회사 정보 <span>↗</span></a><a href="https://corporate.pokemon.co.jp/aboutus/philosophy/" target="_blank" rel="noopener noreferrer">기업 이념 <span>↗</span></a><a href="https://corporate.pokemon.co.jp/aboutus/history/" target="_blank" rel="noopener noreferrer">연혁 <span>↗</span></a><a href="https://corporate.pokemon.co.jp/business/" target="_blank" rel="noopener noreferrer">사업 소개 <span>↗</span></a></div></aside></section>
-<section class="closing" aria-label="공식 사이트 안내"><div class="wrap closing-inner"><p>포켓몬과 함께,<br>더 넓은 세계를 만나보세요.</p><a class="button" href="https://corporate.pokemon.co.jp/" target="_blank" rel="noopener noreferrer">기업 공식 사이트 방문 <span aria-hidden="true">↗</span></a></div></section>
-</main>
-<footer class="footer"><div class="wrap footer-inner"><div><p class="footer-name">The Pokémon Company</p><p>PLAYFUL CONNECTION — 포켓몬으로 연결되는 세계</p></div><div><p>기업 소개 디자인 시안 · 비공식 페이지</p><p>포켓몬 관련 명칭과 권리는 각 권리자에게 있습니다.</p></div></div></footer>
-<button class="to-top" aria-label="페이지 맨 위로">↑</button>
-<script>
-(()=>{const menu=document.querySelector('.menu-button'),nav=document.querySelector('.nav'),top=document.querySelector('.to-top');function closeMenu(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='메뉴'}menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);menu.textContent=open?'닫기':'메뉴'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus()}});window.matchMedia('(min-width:641px)').addEventListener('change',closeMenu);window.addEventListener('scroll',()=>top.classList.toggle('show',window.scrollY>500),{passive:true});top.addEventListener('click',()=>{window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});document.querySelector('.brand').focus({preventScroll:true})});if('IntersectionObserver'in window){const links=[...nav.querySelectorAll('a[href^="#"]')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(link=>{const active=link.getAttribute('href')==='#'+entry.target.id;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')})})},{rootMargin:'-15% 0px -55% 0px',threshold:0});document.querySelectorAll('section[id]').forEach(s=>observer.observe(s))}})();
-</script>
+<body>
+
+    <!-- Top Scroll Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="brand-logo" aria-label="주식회사 포켓몬 홈">
+                <span class="pokeball-icon" aria-hidden="true"></span>
+                <span>주식회사 포켓몬 <small class="en-point" style="font-weight:600; color:var(--text-muted); font-size:0.8rem; margin-left:4px;">The Pokémon Company</small></span>
+            </a>
+            <nav aria-label="주요 메뉴">
+                <ul class="nav-links">
+                    <li><a href="#overview">기업 개요</a></li>
+                    <li><a href="#vision">미션 &amp; 비전</a></li>
+                    <li><a href="#business">주요 사업</a></li>
+                    <li><a href="#sources">자료 출처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="top">
+        <!-- 1. Hero Section: The Poké-Verse Bridge -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="dot"></span>
+                        <span>CONCEPT : THE POKÉ-VERSE BRIDGE</span>
+                    </div>
+                    <h1 class="hero-title">
+                        현실과 가상 세계를 잇는<br>
+                        <span class="highlight-red">글로벌 IP 브릿지</span>
+                    </h1>
+                    <p class="hero-lead">
+                        주식회사 포켓몬(The Pokémon Company)은 포켓몬 프랜차이즈의 저작권 관리와 마케팅을 총괄하며, 문화와 세대를 넘어 전 세계 사람들을 연결합니다.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#overview" class="btn btn-primary">기업 개요 살펴보기</a>
+                        <a href="#business" class="btn btn-secondary">주요 사업 영역</a>
+                    </div>
+                </div>
+
+                <!-- Dual-Frame Bridge Visual -->
+                <div class="bridge-showcase" aria-label="현실과 가상 세계의 연결">
+                    <article class="world-card virtual tilt-card">
+                        <div class="world-card-header">
+                            <span class="world-label">Virtual World</span>
+                            <span class="en-point" style="font-weight:700; font-size:0.85rem; color:var(--text-muted);">01</span>
+                        </div>
+                        <h3>가상 세계의 설렘과 모험</h3>
+                        <p>포켓몬스터 비디오 게임 시리즈, TV 애니메이션, 모바일 앱 콘텐츠를 통해 상상 속 포켓몬 세계의 경험을 창조합니다.</p>
+                    </article>
+
+                    <div class="bridge-connector">ENRICHING BOTH WORLDS</div>
+
+                    <article class="world-card real tilt-card">
+                        <div class="world-card-header">
+                            <span class="world-label">Real World</span>
+                            <span class="en-point" style="font-weight:700; font-size:0.85rem; color:var(--text-muted);">02</span>
+                        </div>
+                        <h3>현실 세계의 교류와 즐거움</h3>
+                        <p>포켓몬 카드 게임(TCG), 캐릭터 상품 라이선스, 공식 오프라인 매장(포켓몬 센터)으로 일상의 즐거움을 확장합니다.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Company Overview (Bento Grid) -->
+        <section id="overview" class="overview-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Company Overview</span>
+                    <h2 class="section-title">기업 개요</h2>
+                    <p class="section-desc">검증된 기업 조사 데이터를 바탕으로 정리한 주식회사 포켓몬의 핵심 프로필입니다.</p>
+                </div>
+
+                <div class="bento-overview">
+                    <!-- 정식 기업명 -->
+                    <div class="bento-item span-6 tilt-card">
+                        <div class="meta-label">
+                            <span>정식 기업명</span>
+                            <span class="en-point">COMPANY NAME</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">주식회사 포켓몬</div>
+                            <p class="meta-sub en-point">The Pokémon Company / 株式会社ポケモン</p>
+                        </div>
+                    </div>
+
+                    <!-- 설립일 -->
+                    <div class="bento-item span-6 tilt-card">
+                        <div class="meta-label">
+                            <span>설립일</span>
+                            <span class="en-point">ESTABLISHED</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">1998년 4월 23일</div>
+                            <p class="meta-sub">일본 도쿄 니혼바시 설립</p>
+                        </div>
+                    </div>
+
+                    <!-- 핵심 인물 -->
+                    <div class="bento-item span-4 tilt-card">
+                        <div class="meta-label">
+                            <span>핵심 인물</span>
+                            <span class="en-point">LEADERSHIP</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">이시하라 츠네카즈</div>
+                            <p class="meta-sub">사장 및 CEO</p>
+                        </div>
+                    </div>
+
+                    <!-- 본사 위치 -->
+                    <div class="bento-item span-8 tilt-card">
+                        <div class="meta-label">
+                            <span>본사 위치</span>
+                            <span class="en-point">HEADQUARTERS</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">일본 도쿄도 미나토구 롯폰기 10-1</div>
+                            <p class="meta-sub">롯폰기힐즈 모리타워 18층</p>
+                        </div>
+                    </div>
+
+                    <!-- 주요 주주 -->
+                    <div class="bento-item span-6 tilt-card">
+                        <div class="meta-label">
+                            <span>주요 주주 (합작 투자)</span>
+                            <span class="en-point">SHAREHOLDERS</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">3사 공동 출자</div>
+                            <div class="shareholder-pills">
+                                <span class="pill">닌텐도 (Nintendo)</span>
+                                <span class="pill">게임 프리크 (Game Freak)</span>
+                                <span class="pill">크리처스 (Creatures)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 자회사 정보 -->
+                    <div class="bento-item span-6 tilt-card">
+                        <div class="meta-label">
+                            <span>자회사 정보</span>
+                            <span class="en-point">SUBSIDIARIES</span>
+                        </div>
+                        <div>
+                            <div class="meta-value-lg">세계 각 지역별·분야별 자회사 운영</div>
+                            <p class="meta-sub">대한민국 지사: <strong>포켓몬코리아</strong> (2006년 8월 설립)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Vision & Mission -->
+        <section id="vision">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Mission &amp; Vision</span>
+                    <h2 class="section-title">비전 및 미션</h2>
+                    <p class="section-desc">현실과 가상을 풍요롭게 만들고 세대와 문화를 연결하는 브랜드 철학입니다.</p>
+                </div>
+
+                <div class="vision-wrapper">
+                    <!-- Mission Card -->
+                    <article class="statement-card mission-theme tilt-card">
+                        <div>
+                            <div class="statement-type">
+                                <span>● OUR MISSION</span>
+                            </div>
+                            <h3 class="statement-kr">
+                                “포켓몬 캐릭터를 통해 현실 세계와 가상 세계 모두를 풍요롭게 만드는 것”
+                            </h3>
+                        </div>
+                        <p class="statement-en">
+                            “To enrich both the real world and the virtual world with the Pokémon characters.”
+                        </p>
+                    </article>
+
+                    <!-- Vision Card -->
+                    <article class="statement-card vision-theme tilt-card">
+                        <div>
+                            <div class="statement-type">
+                                <span>● OUR VISION</span>
+                            </div>
+                            <h3 class="statement-kr">
+                                “사랑받는 포켓몬 브랜드를 활용해 문화와 세대를 넘어 사람들을 연결하고, 세계 최고의 창의적이고 매력적인 엔터테인먼트 콘텐츠 제공자가 되는 것”
+                            </h3>
+                        </div>
+                        <p class="statement-en">
+                            Connecting people across cultures and generations through the beloved Pokémon brand.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Our Business / Services -->
+        <section id="business" class="business-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Our Business</span>
+                    <h2 class="section-title">주요 사업 영역</h2>
+                    <p class="section-desc">포켓몬 프랜차이즈의 저작권 관리와 마케팅을 총괄하며 5대 핵심 사업 영역을 전개합니다.</p>
+                </div>
+
+                <!-- Interactive Filter Buttons -->
+                <div class="filter-bar" role="tablist" aria-label="사업 영역 필터">
+                    <button class="filter-btn active" data-filter="all" type="button">전체 보기 (5)</button>
+                    <button class="filter-btn" data-filter="digital" type="button">가상·디지털 콘텐츠</button>
+                    <button class="filter-btn" data-filter="experience" type="button">현실·오프라인 경험</button>
+                </div>
+
+                <div class="business-grid" id="businessGrid">
+                    <!-- 1. 비디오 게임 -->
+                    <article class="biz-card tilt-card" data-category="digital">
+                        <div class="biz-top">
+                            <span class="biz-num">BUSINESS 01</span>
+                            <h3 class="biz-title">비디오 게임</h3>
+                            <p class="biz-desc">'포켓몬스터' 비디오 게임 시리즈 기획 및 프로듀싱을 통해 프랜차이즈의 핵심 세계관과 모험을 선보입니다.</p>
+                        </div>
+                        <div class="biz-footer">
+                            <span>VIDEO GAMES</span>
+                            <span>VIRTUAL WORLD</span>
+                        </div>
+                    </article>
+
+                    <!-- 2. 카드 게임 -->
+                    <article class="biz-card tilt-card" data-category="experience">
+                        <div class="biz-top">
+                            <span class="biz-num">BUSINESS 02</span>
+                            <h3 class="biz-title">카드 게임</h3>
+                            <p class="biz-desc">포켓몬 카드 게임(TCG)을 기획·전개하여 전 세계 플레이어들이 오프라인과 대회에서 교류할 수 있는 장을 만듭니다.</p>
+                        </div>
+                        <div class="biz-footer">
+                            <span>TRADING CARD GAME</span>
+                            <span>REAL WORLD</span>
+                        </div>
+                    </article>
+
+                    <!-- 3. 영상 매체 -->
+                    <article class="biz-card tilt-card" data-category="digital">
+                        <div class="biz-top">
+                            <span class="biz-num">BUSINESS 03</span>
+                            <h3 class="biz-title">영상 매체</h3>
+                            <p class="biz-desc">포켓몬스터 텔레비전 애니메이션 시리즈, 만화영화 시리즈, 실사 영화(명탐정 피카츄 등)를 통해 스토리텔링을 확장합니다.</p>
+                        </div>
+                        <div class="biz-footer">
+                            <span>ANIMATION &amp; MOVIES</span>
+                            <span>MEDIA CONTENT</span>
+                        </div>
+                    </article>
+
+                    <!-- 4. 라이선스 및 모바일 앱 -->
+                    <article class="biz-card wide-card tilt-card" data-category="digital experience">
+                        <div class="biz-top">
+                            <span class="biz-num">BUSINESS 04</span>
+                            <h3 class="biz-title">라이선스 및 모바일 앱</h3>
+                            <p class="biz-desc">다양한 브랜드와의 캐릭터 상품 라이선스 관리 및 모바일 앱 서비스를 통해 일상 속 언제 어디서나 포켓몬을 만날 수 있게 합니다.</p>
+                        </div>
+                        <div class="biz-footer">
+                            <span>LICENSING &amp; MOBILE APPS</span>
+                            <span>BRIDGE SERVICE</span>
+                        </div>
+                    </article>
+
+                    <!-- 5. 공식 매장 운영 -->
+                    <article class="biz-card wide-card tilt-card" data-category="experience">
+                        <div class="biz-top">
+                            <span class="biz-num">BUSINESS 05</span>
+                            <h3 class="biz-title">공식 매장 운영</h3>
+                            <p class="biz-desc">공식 오프라인 숍인 '포켓몬 센터(Pokémon Center)'를 운영하며 팬들에게 차별화된 브랜드 체험과 오리지널 상품을 제공합니다.</p>
+                        </div>
+                        <div class="biz-footer">
+                            <span>POKÉMON CENTER</span>
+                            <span>OFFLINE RETAIL</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Verified Sources -->
+        <section id="sources">
+            <div class="container">
+                <div class="sources-box">
+                    <span class="section-badge" style="margin-bottom:10px;">Verified References</span>
+                    <h2 style="font-size:1.4rem; font-weight:800;">기업 조사 출처 표기</h2>
+                    <p style="font-size:0.925rem; color:var(--text-secondary); margin-top:4px;">
+                        본 웹 페이지는 조사된 공식 자료 및 학술·비즈니스 분석 문헌만을 바탕으로 제작되었습니다.
+                    </p>
+                    <ul class="sources-list">
+                        <li>위키백과, "포켓몬 (기업)" (https://ko.wikipedia.org/wiki/포켓몬_(기업))</li>
+                        <li>나무위키, "포켓몬 컴퍼니" (https://namu.wiki/w/포켓몬%20컴퍼니)</li>
+                        <li>RocketReach, "The Pokémon Company Information"</li>
+                        <li>ResearchGate 학술 자료, "The Pokémon Company Business Insights, Competitive Advantage, and Global Impact" (2025년 발행)</li>
+                        <li>note.com, "포켓몬은 왜 세대를 넘어 강력한가" 비즈니스 분석글</li>
+                        <li>한국콘텐츠진흥원(KOCCA), "IP 확장의 열쇠는 유기적인 스토리텔링"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h4>주식회사 포켓몬 (The Pokémon Company)</h4>
+                <p>일본 도쿄도 미나토구 롯폰기 10-1, 롯폰기힐즈 모리타워 18층 | 설립일: 1998년 4월 23일</p>
+            </div>
+            <div class="footer-note">
+                <p>Design Concept: <strong>The Poké-Verse Bridge</strong> (Minimalism Edition)</p>
+                <p>본 페이지는 기업 조사 결과를 바탕으로 제작된 회사 소개 웹 페이지입니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // 1. Scroll Progress Indicator & Active Navigation Link
+        const scrollProgress = document.getElementById('scrollProgress');
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = progress + '%';
+
+            let currentSection = '';
+            sections.forEach(sec => {
+                const sectionTop = sec.offsetTop - 140;
+                if (scrollTop >= sectionTop) {
+                    currentSection = sec.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // 2. Business Category Filter Interaction
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const bizCards = document.querySelectorAll('.biz-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                bizCards.forEach(card => {
+                    const categories = card.getAttribute('data-category');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // 3. Subtle 3D Tilt Micro-Interaction on Bento Cards
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -2.5;
+                const rotateY = ((x - centerX) / centerX) * 2.5;
+
+                card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    </script>
 </body>
 </html>
